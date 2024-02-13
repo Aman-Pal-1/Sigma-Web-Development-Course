@@ -1,0 +1,16 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(60, 170, 192, 1) 100%);
+}
+.red {
+    color: red;
+}
+.yellow {
+    background: yellow;
+}
+#second {
+    background-color: antiquewhite;
+}
+#third {
+    background: aqua;
+}

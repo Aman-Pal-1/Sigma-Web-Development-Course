@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CSS Box Model - Margin, Padding & Borders | Sigma Web Development Course - Tutorial #18">
+    <title>CSS Box Model - Margin, Padding & Borders </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(0, 0, 0);
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="box box1">
+            I am a Box . total width = width+left and right margin +left or right border + left and right padding .  
+        </div>
+        <div class="box box2">this is box 2</div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,2 @@
+first we click on any browser and search any website and right click on it and select inspect option after select lighthouse and select any device mobile or desktop and click analize page load and finally see the report of it do improvements in websites.
+for more details search web.dev is very important website recomanded for all to try it .

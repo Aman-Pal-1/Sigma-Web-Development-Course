@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercise 4 - Multi Color Website ">
+    <title>Exercise 4 - Multi Color Website </title>
+    <style>
+        :root {
+            --color: rgb(0, 0, 0);
+            --seccolor: rgb(200, 150, 300);
+            --defpad: 4px;
+            --defmar: 15px;
+            --defop: 0.9;
+            --defborder: 1px solid rgb(244, 169, 244);
+            --thirdcolor: rgb(190, 67, 218);
+            --bodybgc: rgb(186, 49, 232);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:var(--bodybgc);
+        }
+
+        .nav {
+            display: flex;
+            column-gap: 7px;
+            color: var(--color);
+            background-color: var(--seccolor);
+            opacity: var(--defop);
+            border: var(--defborder);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px var(--thirdcolor);
+        }
+
+        ul li {
+            text-shadow: 2px 2px 2px var(--thirdcolor);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style:normal;
+            font-size: medium;
+            font-weight: 550;
+            list-style: none;
+            margin: var(--defmar);
+            padding: var(--defpad);
+        }
+
+        ul :first-child {
+            margin-left: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: var(--thirdcolor);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+
+    <div>
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

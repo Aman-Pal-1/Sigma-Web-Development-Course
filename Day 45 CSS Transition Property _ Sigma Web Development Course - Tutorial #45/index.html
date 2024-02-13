@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Transition Property _ Sigma Web Development Course - Tutorial #45">
+    <title>CSS Transition Property _ Sigma Web Development Course - Tutorial #45</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       } 
+       .container{
+        width: 90vw;
+        height: 90vh;
+        background-color: skyblue;
+        border: 2px solid blue;
+        border-radius: 5px;
+       }
+       .box{
+        width: 50vw;
+        height: 70vh;
+        background-color: black;
+        border: 2px solid white;
+        /* transition-property: transform; */
+        /* transition-property: all;
+        transition-duration: 3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+       */
+       transition: all 3s ease-in-out 1s;
+       }
+       .translate{
+        transform: translateX(10vw) translateY(10vh) scale(1.1);
+        background-color: pink;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

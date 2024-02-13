@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="description"
+        content="CSS Sizing Units - px, rem, em, vh, vw, % & more | Sigma Web Development Course - Tutorial #22">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            border: 2px solid black;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+        ul{width: 80vw;
+            margin: auto;
+            display: flex;
+            list-style: none;
+        } 
+        li{
+            margin: 5px 25px;
+        }
+        html {
+            font-size: 12px;
+        }
+        .box {
+            font-size: 18px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 40vh;
+            font-size: 18px;
+            background-color: aquamarine;
+            margin: 10px auto;
+            min-height: 80vh;
+        }
+        .box p {
+            font-size: 2rem;
+        }
+        .container {
+            box-sizing: border-box;
+            border: 2px solid red;
+            color: blue;
+            background-color: yellow;
+            font-size: 18px;
+            width: 100vmin;
+            margin: 10px auto;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            This Is Box.
+            <p>this is paragraph.</p>
+        </div>
+        <div class="container"> box sizing border box.</div>
+
+    </main>
+    <footer>
+        &copy;
+    </footer>
+    <script src="script.js">javascript</script>
+
+</body>
+
+</html>

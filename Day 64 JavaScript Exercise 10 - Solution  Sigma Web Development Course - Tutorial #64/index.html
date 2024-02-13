@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript Exercise 10 - Solution  Sigma Web Development Course - Tutorial #64">
+    <title>JavaScript Exercise 10 - Solution Sigma Web Development Course - Tutorial #64</title>
+
+</head>
+
+<body>
+
+    <script>
+        let rand = Math.random()
+        // 0  0.33  0.66  1
+        let first , Second , Third;
+        
+                     // lets generate the first word 
+        if (rand < 0.33){
+            first = "Crazy"
+        }
+        else if (rand < 0.66 && rand >= 0.33){
+            first = "Amazing"
+        }
+        else {
+            first = "Fire"
+        }
+
+                       // lets generate the Second word
+        rand = Math.random() 
+        if (rand < 0.33){
+            Second = "Engine"
+        }
+        else if (rand < 0.66 && rand >= 0.33){
+            Second = "Foods"
+        }
+        else {
+            Second = "Garments"
+        }
+
+                // lets generate the Third word
+        rand = Math.random() 
+        if (rand < 0.33){
+            Third = "Bros"
+        }
+        else if (rand < 0.66 && rand >= 0.33){
+            Third = "Limited"
+        }
+        else {
+            Third = "Hub"
+        }
+        console.log(`${first} ${Second} ${Third}`)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Shadows and Outlines">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+.box{ background-color: rgb(244, 239, 239);
+    border: 2px solid black;
+    padding: 25px;
+    box-shadow: 15px 15px 10px gray;
+    text-shadow: 2px 1px 2px rgb(244, 0, 8);
+}
+.text-shadow{border: 2px solid yellow;
+    border-radius: 25px;
+    text-shadow: 2px 1px 2px rgb(0, 183, 244);
+}
+.outline{
+    border: 2px solid rgb(119, 119, 5);
+    outline: 2px solid gray;
+    outline-offset: 3px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="text-shadow">
+                <li>Home</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box">this is our first div. </div>
+        <p class="outline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione obcaecati facilis laboriosam tempora
+            voluptates excepturi provident laudantium porro cupiditate autem quas ipsa fugiat, esse delectus molestias,
+            aliquam rem aspernatur id quisquam consectetur dolores.</p>
+    </main>
+    <footer>
+        <p>&copy;CopyRight Strick by AP Group.</p>
+    </footer>
+
+</body>
+
+</html>

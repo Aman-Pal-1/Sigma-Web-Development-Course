@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Specificity & Cascade | Sigma Web Development Course - Tutorial #21">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        /* the specificity of this element is 1  */
+        h1 {
+            color: red;
+        }
+        /* the specificity of this element is 10  */
+        .red {
+            color: blue;
+        }
+        .yellow {
+            color: yellow;
+        }
+        /* the specificity of this element is 1+10=11  */
+        h1.post {
+            color: pink;
+        }
+          /* the specificity of important keyword is 10000 +10 */
+        .here {
+            color: honeydew !important;
+        }
+        /* this is an example of attribute character the specificity of this element is 10  */
+        [data-x=a] {
+            background: blue;
+        }
+         /* the specificity of inline element element is 1000  */
+        #IDENTITY {
+            background-color: rgb(238, 246, 0);
+        }
+        /* the specificity of inline element element is 100  */
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 style="color: aqua;" class="red yellow post here " data-x="a">hey this is our css prectise file </h1>
+            <H1 id="IDENTITY">THIS IS ANOTHER TAG </H1>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercise 8 Solution">
+    <title>Exercise 8 Solution</title>
+    <title>Exercise 8 Bounce Animation</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.container{
+    width: 80vw;
+    height: 80vh;
+    background-color: slateblue;
+    position: relative;
+}
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 70px;
+    left: 0;
+    bottom: 0;
+    animation: bounceAnimation 1s linear infinite , animateY 1s ease-out infinite alternate  ;
+}
+@keyframes bounceAnimation{
+    from{
+        left: 0;
+    }
+    to{
+       left: 100%;
+    }
+}
+@keyframes animateY{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

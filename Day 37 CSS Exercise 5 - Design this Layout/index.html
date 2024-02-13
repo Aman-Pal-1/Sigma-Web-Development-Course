@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Exercise 5 - Design this Layout">
+    <title>CSS Exercise 5 - Design this Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        :root {
+            --border-color: rgb(95, 159, 202);
+            --color: rgb(146, 208, 229);
+            --textcolor: rgb(255, 255, 255);
+            --navcolor: rgb(0, 37, 248);
+            --box-color: rgb(110, 156, 242);
+            --boxsec-color: rgb(79, 70, 211);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: var(--color);
+        }
+        
+        header {
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: var(--navcolor);
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        ul li {
+            font-size: 14px;
+            padding: 7px 15px;
+            font-family: 'Poppins', sans-serif;
+            list-style: none;
+            font-weight: bold;
+        }
+        
+        ul li a {
+            margin-left: 20px;
+            color: var(--textcolor);
+            text-decoration: none;
+        }
+        
+        .mainbox {
+            display: flex;
+            border: 2px solid var(--border-color);
+            background: var(--box-color);
+            margin: 30px;
+            height: 700px;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .container1 {
+            margin: 90px;
+            width: 450px;
+            height: 550px;
+            display: inline-block;
+            background-color: var(--boxsec-color);
+            box-shadow: 2px 2px 4px var(--textcolor);
+        }
+        
+        .container2 {
+            margin: 90px;
+            width: 450px;
+            height: 550px;
+            background-color: var(--boxsec-color);
+            float: right;
+            box-shadow: 2px 2px 4px var(--textcolor);
+        }
+
+        .container1 h2 {
+            padding-top: 35px;
+            color: var(--textcolor);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .container2 h2 {
+            padding-top: 35px;
+            color: var(--textcolor);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .container1 p {
+            color: var(--color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        .container2 p {
+            color: var(--color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        .container3 h3 {
+            color: var(--textcolor);
+            background-color: var(--box-color);
+            border: 1px solid var(--border-color);
+            width: 95vw;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        img {
+            position: fixed;
+            bottom: 15px;
+            right: 30px;
+            width: 72px;
+            background-color: white;
+            border-radius: 50px;
+        }
+
+        .footer {
+            width: 97vw;
+            background: var(--navcolor);
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 4px gray;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 45px;
+            padding: 7px;
+            color: var(--textcolor);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mainbox">
+            <div class="container1">
+                <h2>Heading-1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error iste, vitae itaque temporibus aperiam
+                    provident nobis eius pariatur possimus! Unde illo odio obcaecati quos, rerum maiores ut, laboriosam
+                    maxime saepe earum repellat laudantium fugiat voluptas culpa sed iure ex! Temporibus, mollitia?
+                    Temporibus consectetur quo adipisci.</p>
+            </div>
+            <div class="container2">
+                <h2>Heading-2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eos aliquid in voluptatem sint
+                    facere libero quod error, enim quas vitae! Facere commodi quia, quos debitis, nemo ratione libero
+                    recusandae, cupiditate ab delectus omnis voluptas eos aliquid possimus culpa? Eum optio neque
+                    inventore blanditiis qui!</p>
+            </div>
+        </div>
+        <div class="container3">
+            <h3>Welcome To WebDevelopment Express</h3>
+        </div>
+        <img src="https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/2FWHTNB/html5-css3-js-icon-set-web-development-logo-icon-set-of-html-css-and-javascript-programming-symbol-2FWHTNB.jpg"
+            alt="image.logo">
+    </main>
+    <footer>
+        <div class="footer">
+            &copy; CopyRights By AP | All Rights Are Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

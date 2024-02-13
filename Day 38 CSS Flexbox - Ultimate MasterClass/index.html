@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Flexbox - Ultimate MasterClass">
+    <title>CSS Flexbox - Ultimate MasterClass</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 80vh;
+            border: 2px solid black;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction:column-reverse; */
+            /* align-content: center; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap; */
+            /* gap:20px */
+            /* row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+        }
+
+        #item {
+            /* flex-grow: 1; */
+            color: white;
+            height: 92px;
+            width: 92px;
+            border: 2px solid rgb(0, 0, 0);
+            /* margin: 4px; */
+            background-color: rgb(255, 0, 255);
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .order-4 {
+            order: 4;
+        }
+
+        .item1 {
+            /* flex-grow: 2; */
+            align-self: flex-end;
+            color: white;
+            height: 92px;
+            width: 92px;
+            border: 2px solid rgb(0, 0, 0);
+            /* margin: 4px; */
+            background-color: rgb(255, 0, 255);
+        }
+
+        .item2 {
+            flex-shrink: 2;
+            align-self: self-start;
+        }
+
+        header {
+            position: sticky;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            width: 100vw;
+            background-color: black;
+            justify-content: center;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-left: 20px;
+            margin: 9px;
+            word-wrap: wrap;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ul li a {
+            font-weight: 500;
+            color: white;
+            padding: 10px 12px;
+            font-style: normal;
+            text-decoration: none;
+        }
+
+        li img {
+            margin: 0;
+            padding: 0;
+            width: 25px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">
+                        <img src="IMG_20230215_111433.jpg" alt="IMAGE">
+                    </a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="itmes item1">1</div>
+            <div class="itmes item2" id="item">2</div>
+            <div class="itmes" id="item">3</div>
+            <div class="itmes order-1" id="item">4</div>
+            <div class="itmes" id="item">5</div>
+            <div class="itmes" id="item">6</div>
+            <div class="itmes" id="item">7</div>
+            <div class="itmes" id="item">8</div>
+            <div class="itmes" id="item">9</div>
+            <div class="itmes order-1" id="item">10 </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

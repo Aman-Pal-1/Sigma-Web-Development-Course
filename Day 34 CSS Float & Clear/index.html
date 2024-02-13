@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Float & Clear">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img {
+            float: left;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card :nth-child(3) {
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://www.barcoding.co.uk/wp-content/uploads/2019/06/Homepage-Laptop-Website-Internet-1024x769.jpg"
+            alt="img" width="230px">
+        <div class="card">card1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis totam, vitae
+            deleniti enim corrupti vero, laboriosam esse expedita amet, ad possimus recusandae. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Quia est laboriosam illo sint ut, autem cupiditate sapiente nostrum aut
+            vel necessitatibus nemo ipsum dolore in provident numquam magnam, consequatur velit adipisci corporis
+            laudantium similique tenetur veritatis culpa! Obcaecati, quas enim sit facere perferendis maiores atque rem
+            necessitatibus ducimus iure laudantium sequi eius provident odit?
+        </div>
+        <div class="card">card2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam repellat sunt
+            culpa optio esse. Asperiores animi tempore ab quam, voluptatum quod aliquam est provident nihil dolores
+            tenetur repudiandae laudantium aperiam, quaerat doloribus accusantium. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Totam maxime itaque mollitia, voluptate esse voluptatibus ipsa blanditiis
+            consequatur in quis modi ut beatae ab laboriosam provident eum asperiores obcaecati. At aut laboriosam
+            quisquam dolore, ipsum dolores? Dolor error amet ipsam velit commodi. Perspiciatis, quos ut!</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+
+</html>

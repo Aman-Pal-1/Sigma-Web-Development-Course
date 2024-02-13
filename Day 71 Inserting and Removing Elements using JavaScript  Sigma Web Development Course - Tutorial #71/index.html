@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inserting and Removing Elements using JavaScript  Sigma Web Development Course - Tutorial #71">
+    <title>Inserting and Removing Elements using JavaScript  Sigma Web Development Course - Tutorial #71</title>
+</head>
+<body>
+    <div class="container" style="display: flex;" data-createdby="Amanpal" data-conceptby="harry">
+        <div class="box">
+            hay i am box.
+        </div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML= "i have been inserted it by using <b>javascript</b>"
+        div.setAttribute("class","secbox");
+        document.querySelector("container").append(div)
+    </script>
+    <script src="script.js"></script> 
+</body>
+</html>

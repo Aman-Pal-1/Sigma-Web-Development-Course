@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI';
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0px 5px;
+}
+
+.firstheading {
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI";
+    margin-top: 48px;
+}
+
+.firstheading h1 {
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.downpara p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-top: 8px;
+}
+
+.downlinux {
+    display: flex;
+    justify-content: center;
+}
+
+.downloadbutton {
+    background-color: #00b6d1;
+    color: white;
+    font-family: "segoe ui";
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid #00b6d1;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 11px 15px;
+    margin-top: 28px;
+}
+
+.downlinux :hover {
+    background-color: rgb(75, 142, 242);
+}
+
+.h3div {
+    display: flex;
+    justify-content: center;
+}
+
+.h3div h3 {
+    margin: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    background-image: url(ultraeditsecimg.jpeg);
+    background-position: left center;
+    padding-top: 28px;
+    padding-bottom: 25px;
+    padding-left: 80px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+
+}
+.h3div a{
+    text-decoration: none;
+    color: black;
+}
+.cardsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 9px;
+    width: 70vw;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.card {
+    background-color: rgba(234, 234, 234, 0.329);
+    border: 1px solid white;
+    border-radius: none;
+    align-items: end;
+    cursor: grab;
+    max-width: 100%;
+    height: 125px;
+    width: 312px;
+
+}
+
+.card p {
+    margin: 0;
+    padding: 0;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.card h3 {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 35px 0px;
+    font-family: sans-serif;
+}
+
+.cardp h3 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-family: sans-serif;
+}
+
+.card .blue {
+    margin: 0px 5px;
+    background-color: #00b6d1;
+    border-radius: 5px;
+    font-family: "Seoge UI";
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    width: 143px;
+    transition: background-color 0.3s;
+}
+
+.card .blue:hover {
+    background-color: rgb(117, 174, 244);
+}
+
+.card .green:hover {
+    background-color: rgb(119, 243, 119);
+}
+
+.card a {
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 0px 4px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.card .green {
+    margin: 0px 5px;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    font-family: "Seoge UI";
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    width: 143px;
+    transition: background-color 0.3s;
+}
+footer{
+    width: 100vw;
+    max-width: 100%;
+    height: 60vh;
+    margin-top: 40px;
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+@media screen and (max-width:945px){
+    .cardsection{
+        grid-template-columns: 1fr;
+    }
+}

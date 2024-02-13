@@ -1,0 +1,1 @@
+alert(" You are given 12 files; 6 audio and 6 video.Design a website using HTML only which shows these 12 files.")

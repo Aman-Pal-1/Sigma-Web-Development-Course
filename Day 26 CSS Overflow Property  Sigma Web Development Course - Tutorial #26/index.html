@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Overflow Property | Sigma Web Development Course - Tutorial #26">
+    <title>CSS Overflow Property </title>
+    <link rel="shortcut icon" href="images/fav icon.jpeg" type="image/x-icon">
+    <style>
+        :root{
+            --color: rgba(80, 80, 234, 0.427);
+            --seccolor: rgba(40, 94, 116, 0.59);
+            --bgc:rgba(186, 186, 213, 0.456);
+            --border:darkblue;
+            --textshadow: rgb(35, 48, 121);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/002/049/237/large_2x/liquid-art-painting-texture-background-abstract-watercolor-paint-background-dark-blue-color-grunge-texture-for-background-vector.jpg);
+            background-size: cover;
+            box-sizing: border-box; 
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            background-color: var(--color);
+            width: 100vw;
+            color: white;
+            border: 1px solid var(--border);
+            box-sizing: border-box;
+            position: sticky;
+
+
+        }
+
+        li {
+            padding: 5px 20px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 2px 2px 2px var(--textshadow);
+            cursor: pointer;
+            font-size: larger;
+            text-transform: capitalize;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            border: 2px solid var(--border);
+            background-color: var(--bgc);
+            outline: auto;
+            outline-color:var(--seccolor);
+            box-shadow: 2px 2px 10px var(--color);
+            margin: 10px;
+            padding: 10px;
+            overflow: auto;
+            box-sizing: border-box;
+            /* white-space: nowrap ; 
+            text-overflow: ellipsis;
+            overflow-x:hidden;
+            overflow-y:scroll;
+            or
+            overflow:auto hidden;
+            overflow: auto; */
+            height: 80vh;
+            width: 90vw;
+            font-size: large;
+            margin-top: 3vw;
+        }
+
+        .box h1 {
+            text-transform: capitalize;
+            display: flex;
+            justify-content: center;
+            padding: 9px;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .blank {
+            border: 0.5px solid var(--border);
+            width: 30vw;
+            margin: auto;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            <h1>Lorem is very important.</h1>
+            <p class="blank"></p>
+            this is a good toy. i like it.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum veniam iusto accusamus. Obcaecati,
+            architecto quos labore accusamus aspernatur distinctio autem, alias facere vero sunt eius aliquam. Quisquam
+            deleniti incidunt numquam iusto placeat accusamus minima labore praesentium, excepturi aliquam ad minus
+            blanditiis animi error cum qui! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga dolorem
+            dolore perspiciatis ad nostrum quas cupiditate nesciunt ipsa a minima accusamus doloremque ratione,
+            molestiae laborum voluptate. Eaque, quod eligendi quaerat blanditiis voluptatum veniam suscipit odio culpa
+            corrupti. Corrupti magni id hic perferendis explicabo adipisci esse fugiat non architecto? Eius ad molestiae
+            a quo fuga voluptatibus veritatis? Animi magni, molestias soluta sed facere provident similique aliquam sit
+            praesentium, ducimus voluptates? Recusandae, consequatur ab eos excepturi sequi qui placeat vitae dicta
+            tempore. Nam aut explicabo delectus, obcaecati facilis eligendi nobis culpa porro excepturi error est quas.
+            Nemo reiciendis necessitatibus adipisci quisquam, ipsum aut aspernatur distinctio sequi voluptate, quae quod
+            quia, explicabo assumenda veritatis repellendus voluptatibus eligendi! Hic fugit minima sequi, delectus
+            vitae expedita possimus ducimus molestias cumque optio odio tempore consequuntur in et aperiam mollitia
+            perspiciatis nobis modi quos quidem illum, laudantium a! Eveniet tempore temporibus, quia distinctio
+            provident nemo molestiae corporis. Exercitationem fuga ducimus alias unde veritatis impedit laudantium rem
+            sunt inventore deleniti tempora porro voluptatum voluptate, quis commodi velit tempore aspernatur dolorem
+            suscipit, culpa eveniet? Unde quaerat cum, laborum, inventore odit rerum maiores labore nesciunt voluptatem
+            perferendis adipisci distinctio aspernatur vero eum, harum facilis quod pariatur magni culpa! Dolorum
+            reiciendis consequuntur fugiat voluptatum asperiores. Error voluptatem quidem pariatur dicta vero
+            accusantium blanditiis quae excepturi temporibus, reiciendis officiis, nesciunt maiores nemo, libero
+            assumenda sunt iste vel explicabo neque dignissimos natus velit culpa deserunt? Omnis libero nesciunt
+            accusamus fugiat corrupti vero ullam, hic pariatur ad earum aspernatur nostrum, explicabo dicta! Consequatur
+            atque voluptates minus a earum repellat ab repellendus dolor quos. Maxime praesentium error harum hic
+            dolores molestias non! Ducimus obcaecati hic voluptas tempore praesentium? Nobis omnis quos beatae natus,
+            autem vero repellat illum eveniet soluta consectetur dolorem qui et blanditiis nam, libero inventore totam,
+            assumenda magni! Alias itaque similique molestias tenetur beatae. Quisquam dolores excepturi autem cumque
+            repellat repudiandae provident, distinctio libero obcaecati tempora enim nostrum, eum veritatis. Nostrum
+            ducimus ad, voluptatibus iusto itaque quas nesciunt distinctio voluptates quos aspernatur perferendis quod
+            dicta similique eos voluptatem velit dolorem libero sit eius tempora, adipisci dolores aut voluptatum.
+            Doloribus reiciendis sunt ducimus. Alias dicta tempore commodi earum aut, veniam excepturi non facere magni
+            necessitatibus est reiciendis eum mollitia. Possimus laborum omnis totam obcaecati ipsa distinctio doloribus
+            quam rerum corrupti sed libero fugiat, perferendis quasi laudantium debitis natus harum incidunt. Cupiditate
+            commodi, praesentium dolores a error adipisci quasi pariatur sed eos consectetur corporis magnam expedita
+            mollitia distinctio ipsam iusto asperiores odio suscipit, nam eveniet numquam officia labore facere alias.
+            Aut officia, veritatis dicta distinctio, dolor temporibus nam dolorem laudantium architecto quod magni non
+            ratione! Asperiores praesentium ad sint ratione, aperiam sapiente expedita dolores aliquid sunt totam fuga
+            et in, minus provident ea corrupti ipsa voluptatum maxime beatae ex unde ullam atque cumque. Consequuntur
+            quae quo sint iste ratione sequi id maiores quidem! Ab ipsum alias distinctio omnis, impedit, suscipit ut
+            earum commodi minus ipsa non? Blanditiis saepe quod nesciunt? Deserunt modi quod corrupti. Sapiente rerum
+            dolorum doloremque possimus distinctio sint optio explicabo nostrum itaque eum? Quos possimus quam
+            molestias, odio aliquid, dolorum sapiente excepturi molestiae corporis numquam cum, consequuntur blanditiis
+            voluptate dolorem ab quae id. Quasi dolorem ipsam porro nulla minima pariatur ex deserunt aperiam, commodi,
+            ab labore deleniti ducimus illum tempore hic quam tempora obcaecati est odit voluptas accusamus reiciendis
+            excepturi soluta! Repellendus repudiandae impedit perspiciatis fuga corrupti sequi veritatis a, officia
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

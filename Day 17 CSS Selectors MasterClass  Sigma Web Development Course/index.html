@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Selectors MasterClass | Sigma Web Development Course - Tutorial #17">
+    <title>CSS Selectors MasterClass</title>
+    <style>
+        /* Element selector */
+        div {
+            background-color: lightgray;
+            color: rgb(62, 28, 125);
+        }
+
+        /*class selector */
+        .lightblue {
+            background-color: lightblue;
+        }
+
+        .pp {
+            color: rgb(106, 212, 224);
+        }
+        .copy{
+            color: lightgreen;
+        }
+
+        /* id selector  */
+        #div3 {
+            background-color: wheat;
+        }
+
+        /* child selector */
+        div>p {
+            color: seagreen;
+            background: violet;
+        }
+
+        /* descendent selector           any where in div work */
+        div article {
+            background-color: khaki;
+            color: purple;
+        }
+
+        /* Universal selector         apply for all */
+        *{
+            margin: 1px;
+            padding: 1px;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: fuchsia;
+        }
+
+        a:active {
+            background-color: green;
+        }
+
+        a:hover {
+            background-color: rgb(251, 26, 26);
+        }
+
+        p:first-child {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav> home </nav>
+        <div>Element selector </div>
+
+    </header>
+    <main>
+        <p class="pp">i am first child</p>
+        <p class="pp">i am second child</p>
+        <div class="lightblue">
+            I Am Div .
+            <p> i am child selector when i am direct in div then style is work else not work </p>
+        </div>
+        <div id="div3"> I Am Another Div . </div>
+        <div>
+            <p>
+            <h1>
+                <article>
+                    i am descendent selector when i am direct or not direct in div then style is work always.
+                </article>
+            </h1>
+            </p>
+        </div>
+        <div><a href="https://www.google.com">Go To google</a></div>
+        <div><a href="https://www.facebook2.com">Go To Facebook</a></div>
+    </main>
+    <footer>
+        <P class="copy">&copy;Copyright AP Group | All Rights Are Reserved .</P>
+    </footer>
+    <script src="script.js">javascript</script>
+</body>
+
+</html>

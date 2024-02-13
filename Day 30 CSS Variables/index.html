@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Variables | Sigma Web Development Course - Tutorial #30">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: rgb(48, 211, 232);
+            --seccolor: rgb(140, 227, 223);
+            --defpad: 23px;
+            --defop: 0.7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            margin: 2px;
+            background-color: var(--color, blue);
+            border: 2px solid var(--seccolor, lightblue);
+            opacity:var(--defop);
+        }
+ul li:first-child{
+    --color: rgb(255, 89, 29);
+}
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque vel, earum eaque cumque
+        nesciunt praesentium deleniti quibusdam, eveniet similique, odit animi laboriosam fugiat porro asperiores
+        dolorem ad fugit. Sunt, exercitationem cum deleniti aut consectetur ullam voluptates soluta architecto inventore
+        quis, animi vero ipsa laboriosam dicta!</div>
+</body>
+
+</html>
